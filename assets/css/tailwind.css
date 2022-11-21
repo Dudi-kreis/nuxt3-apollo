@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-gray-100;
+}
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+}
+
+@layer components {
+    .card {
+        @apply flex flex-col flex-grow border rounded-2xl bg-white py-4 px-5 gap-5;
+        max-width: 320px;
+    }
+}

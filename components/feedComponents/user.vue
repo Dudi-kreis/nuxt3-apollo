@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>This is nested Component </h1>
+  <div class="flex flex-row gap-5">
+    <h1>user pic</h1>
   </div>
 </template>
 

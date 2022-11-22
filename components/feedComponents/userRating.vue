@@ -17,7 +17,7 @@
 @import "~/styles/colors";
 
 div.user-rating {
-  @apply w-full flex flex-row flex-grow border-2 border-white bg-black items-center rounded-2xl items-center justify-center gap-0.5;
+  @apply w-full flex flex-row border-2 border-white bg-black items-center rounded-2xl items-center justify-center gap-0.5;
   font-size: 12px;
   font-weight: 600;
 }

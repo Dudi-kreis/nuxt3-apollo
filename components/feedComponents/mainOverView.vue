@@ -3,8 +3,8 @@
   <div class="main">
     <div class="flex gap-5">
       <div class="flex flex-col">
-        <FeedComponentsUser/>
-        <FeedComponentsUserRating/>
+        <FeedComponentsUser class="user-style"/>
+        <FeedComponentsUserRating style="margin-top: -10px;"/>
       </div>
       <div class="broadcast-status flex flex-col">
         <FeedComponentsBroadcastStatus/>
@@ -15,8 +15,9 @@
     </div>
     <div class="border border-gray-100"></div>
     
-    <div class="live-session-url">
+    <div class="live-session-post flex flex-col gap-3">
       <SharedComponentsLiveSessionURL/>
+      <FeedComponentsSessionDetails/>
     </div>
   </div>
 </template>
@@ -31,6 +32,9 @@
 div.main {
   @apply flex flex-col flex-grow gap-3 bg-white rounded-2xl border px-10 py-5;
   max-width: 550px;
+}
+.user-style{
+
 }
 
 .userName-style {

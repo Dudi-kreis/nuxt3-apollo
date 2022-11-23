@@ -11,7 +11,7 @@ html, body {
 }
 
 @layer components {
-    .card {
+    .feed-placeholder-components {
         @apply flex flex-col flex-grow border rounded-2xl bg-white py-4 px-5 gap-5;
         max-width: 320px;
     }

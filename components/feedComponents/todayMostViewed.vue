@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="feed-placeholder-components">
     <div class="flex gap-5">
       <div class="user-group-icon text-black">
         <i class="fa-solid fa-ranking-star"></i>

@@ -1,5 +1,6 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+    components: undefined,
     ssr: false,
     app: {
         head: {
@@ -20,7 +21,15 @@ export default defineNuxtConfig({
             link: [{rel: "icon", type: "image/x-icon", href: "/favicon.ico"}],
         },
     },
-    modules: ['@nuxtjs/tailwindcss', '@nuxtjs/color-mode'],
+
+    modules: ['@nuxtjs/tailwindcss', '@nuxtjs/color-mode', '@nuxtjs/apollo'],
+    apollo: {
+        clients: {
+            default: {
+                httpEndpoint: 'https://creator-service.dvirbenita.workers.dev/graphql'
+            }
+        },
+    },
     css: ['@fortawesome/fontawesome-svg-core/styles.css'],
     colorMode:{
         classSuffix:''
@@ -31,5 +40,5 @@ export default defineNuxtConfig({
         exposeConfig: false,
         injectPosition: 0,
         viewer: true,
-    },
+    }
 })
